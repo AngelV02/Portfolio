@@ -13,46 +13,95 @@
 
         <!--NAV BAR-->
 
-        <nav class="navbar navbar-expand-lg  bg-dark dat" data-bs-theme="dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Home</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#Home">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Resume</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link active" href="#" role="button" aria-expanded="false">Portfolio</a>
-                </ul>
+        <div class="Navbar">
+            <nav class="navbar navbar-expand-lg  bg-dark dat" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#Home">Home</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#About">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Resume</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                <a class="nav-link active" href="#" role="button" aria-expanded="false">Portfolio</a>
+                            </ul>
 
-                <!--Nav end #-->
-                <ul class="nav justify-content-end">
-                    <li class="container-fluid">
-                        <a class="navbar-brand" href="#">&#xF4E2; 503-572-7170</a>
-                    </li>
-                </ul>
+                            <!--Nav end #-->
+                            <ul class="nav justify-content-end">
+                                <li class="container-fluid">
+                                    <a class="navbar-brand" href="#">&#xF4E2; 503-572-7170</a>
+                                </li>
+                            </ul>
 
-
-                </form>
-              </div>
-            </div>
-        </nav>
+                        </div>
+                </div>
+            </nav>
+        </div>
 
         <!--HOME-->
         <div id="Home">
             <div class="jumbotron jumbotron-fluid text-start">
                 <div class="container">
-                    <h1 class="display-4">Angel Velasco</h1>
+                    <h1 class="display-4">Angel</h1>
+                    <h1 class="display-2">Velasco.</h1>
                     <p class="lead ">Software Development</p>
+                    <a class="btn btn-outline-light" href="#" role="button">Resume</a>
+                    <a class="btn btn-outline-light" href="#" role="button">Portfolio</a>
                 </div>
               </div>
         </div>
+
+        <!--END HOME-->
+
+        <!--About Me -->
+
+        <div id="About">
+            <div class="jumbotron jumbotron-fluid text-start">
+                <div class="container">
+                    <h1 class="display-2">About</h1>
+
+
+                    <p class="lead ">nickvela12@gmail.com</p>
+                    <br>
+                    <br>
+                    <br>
+                    <p class="lh-base">I am a software developer who loves to code! <br>
+                    I expect to gradute from the The Tech Academys <br>
+                    Software Developer Boot Camp <br>
+                </div>
+            </div>
+
+
+            <!--Contact info-->
+            <div class="Row" id="Contact">
+                <!--Contact image, left column-->
+                <div class="Column_2 Column_tall">
+                    <img src="" alt="">
+                </div>
+            </div>
+
+
+            <!--Form-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                <form action="https://formspree.io/f/mgebyroy" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+
 
 
 
